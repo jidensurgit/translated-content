@@ -50,7 +50,7 @@ Vous pouvez utiliser Node.js pour créer un simple serveur web en utilisant l'AP
 
 ### Hello Node.js
 
-L'exemple qui suit crée un serveur web qui écoute toutes sortes de requêtes HTTP sur l'URL `https://127.0.0.1:8000/`. Quand une requête est reçue, le script répond avec la chaine « Salut tout le monde ». Si vous avez déjà installé Node, suivez les étapes de l'exemple suivant :
+L'exemple qui suit crée un serveur web qui écoute toutes sortes de requêtes HTTP sur l'URL `http://127.0.0.1:8000/`. Quand une requête est reçue, le script répond avec la chaine « Salut tout le monde ». Si vous avez déjà installé Node, suivez les étapes de l'exemple suivant :
 
 1. Ouvrez un terminal (sur Windows, ouvrez l'invite de commande (cmd)),
 2. Créez le dossier où vous voulez sauvegarder le programme, appelez-le par exemple `test-node` et placez-vous dedans en utilisant la commande suivante dans votre console :
@@ -81,7 +81,7 @@ L'exemple qui suit crée un serveur web qui écoute toutes sortes de requêtes H
    // Démarre le serveur à l'adresse 127.0.0.1 sur le port 8000
    // Affiche un message dès que le serveur commence à écouter les requêtes
    server.listen(port, hostname, () => {
-     console.log(`Le serveur tourne à l'adresse https://${hostname}:${port}/`);
+     console.log(`Le serveur tourne à l'adresse http://${hostname}:${port}/`);
    });
    ```
 
@@ -92,7 +92,7 @@ L'exemple qui suit crée un serveur web qui écoute toutes sortes de requêtes H
    node hello.js
    ```
 
-Puis saisissez l'URL `"https://localhost:8000"` dans votre navigateur. Vous devriez alors voir "**Salut tout le monde**" en haut à gauche d'une page web ne contenant rien d'autre que ce texte.
+Puis saisissez l'URL `"http://localhost:8000"` dans votre navigateur. Vous devriez alors voir "**Salut tout le monde**" en haut à gauche d'une page web ne contenant rien d'autre que ce texte.
 
 ## Les frameworks web
 
